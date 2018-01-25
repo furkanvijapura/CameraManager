@@ -915,7 +915,7 @@ open class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, UIGest
   
   fileprivate func _stopFollowingDeviceOrientation() {
     if cameraIsObservingDeviceOrientation {
-      coreMotion.stopAccelerometerUpdates()
+      coreMotionManager.stopAccelerometerUpdates()
       cameraIsObservingDeviceOrientation = false
     }
   }
